@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Slider1Simple from './components/Slider1Simple'
+import Slider2Multiple from './components/Slider2Multiple'
+import Slider3Responsive from './components/Slider3Responsive'
+import Slider4MultipleRows from './components/Slider4MultipleRows'
+import Slider5Syncing from './components/Slider5Syncing'
+import Slider5Syncing2 from './components/Slider5Syncing2'
+// import Slider5Syncing2 from './components/Slider5Syncing2'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Slider1Simple/>
+      <Slider2Multiple/>
+      <Slider3Responsive/>
+      <Slider4MultipleRows/>
+      <Slider5Syncing/>
+      <Slider5Syncing2/>
+      {/* <Slider5Syncing2/> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
